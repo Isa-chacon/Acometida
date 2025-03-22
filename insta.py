@@ -11,7 +11,7 @@ st.set_page_config(page_title="Cálculo de Acometida", layout="wide")
 # Personalización de estilo 
 st.markdown("""
     <style>
-    .css-18e3th9, .css-1y4v4l9, .css-1v0mbdj {background-color: lavenderblush; color: black;}
+    .css-18e3th9, .css-1y4v4l9, .css-1v0mbdj {background-color: lavenderblush; color: blue;}
     .css-1l0l5lz {color: white;}
     .title {text-align: center; font-size: 40px; font-weight: bold; color: blue;}  
     [data-testid="stSidebar"] {background-color: mistyrose;}
