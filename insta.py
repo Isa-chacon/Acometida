@@ -13,10 +13,10 @@ st.markdown("""
     <style>
     .css-18e3th9, .css-1y4v4l9, .css-1v0mbdj {background-color: lavenderblush; color: black;}
     .css-1l0l5lz {color: white;}
-    .title {text-align: center; font-size: 40px; font-weight: bold; color: #008B8B;}  
+    .title {text-align: center; font-size: 40px; font-weight: bold; color: darkcyan;}  
     [data-testid="stSidebar"] {background-color: mistyrose;}
-    .subheader {text-align: center; font-size: 30px; font-weight: bold; color: #5F9EA0;}
-    .p {text-align: left; font-size: 20px; font-weight: bold; color: black;}
+    .subheader {text-align: center; font-size: 20px; font-weight: bold; color: cadetblue;}
+    .p {text-align: left; font-size: 10px; font-weight: bold; color: black;}
     .error-message {color: red; font-size: 18px; font-weight: bold;}
     
     /* Estilo personalizado para el botón */
