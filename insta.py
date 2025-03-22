@@ -4,7 +4,6 @@ import pandas as pd
 import numpy as np
 import math
 import copy
-from streamlit_extras.stylable_container import stylable_container
 
 # Configuración de la página
 st.set_page_config(page_title="Cálculo de Acometida", layout="wide")
@@ -41,14 +40,6 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
-
-with stylable_container(
-    key="custom_style",
-    css_styles="""
-    section[data-testid="stSidebar"] {background-color: mistyrose;}
-    .title {text-align: center; font-size: 40px; font-weight: bold; color: blue;}  
-    """
-):
 
 ############################### MATRICES ###########################
 
@@ -403,8 +394,8 @@ def insulating (T_cable):
 
 st.markdown("<h1 class='title'>Cálculo de Acometida</h1>", unsafe_allow_html=True)
 
-st.markdown("<h1 class='p'> Consideraciones para el cálculo de su acometida eléctrica: </h1>", unsafe_allow_html=True)
 st.markdown("""
+Consideraciones para el cálculo de su acometida eléctrica:
 - Con esta aplicación obtendrá 4 opciones para su acometida con cable de cobre y aluminio, y con 1 y 2 conductores por fase.
 - Los termoplásticos considerados son TW, THW y THHW.
 - Este cálculo admite temperaturas ambiente entre 21 y 40°C.
