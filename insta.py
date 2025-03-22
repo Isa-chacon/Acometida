@@ -400,6 +400,7 @@ st.markdown("""
 - Los termoplásticos considerados son TW, THW y THHW.
 - Este cálculo admite temperaturas ambiente entre 21 y 40°C.
 - Si el sistema no encuentra un cálibre adecuado para su acometida en el valor del cálibre se evidenciará "NA".
+- El calibre indicado se recomienda para las fases, el neutro y la tierra.
 """)
 
 st.link_button("Ver tutorial", "https://uninorte-my.sharepoint.com/:f:/g/personal/imchacon_uninorte_edu_co/EteS2J884clCjUExmLOj07ABexGOt-7pBWxJq2kaeuPFzQ?e=Xp4z6I")
