@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import math
 import copy
+from streamlit_extras.stylable_container import stylable_container
 
 # Configuración de la página
 st.set_page_config(page_title="Cálculo de Acometida", layout="wide")
@@ -40,6 +41,14 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
+with stylable_container(
+    key="custom_style",
+    css_styles="""
+    section[data-testid="stSidebar"] {background-color: mistyrose;}
+    .title {text-align: center; font-size: 40px; font-weight: bold; color: blue;}  
+    """
+):
 
 ############################### MATRICES ###########################
 
