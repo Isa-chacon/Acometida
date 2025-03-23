@@ -302,6 +302,7 @@ def calculos_basicos (potencia,tipo_sistema,voltaje, ambiente,fp,tipofp):
 
 # La función de corrección de temperatura toma las matrices de los cables de cobre y aluminio 
 #y les modifica la capacidad de corriente de acuerdo con la corrección por temperatura 
+#Tabla 310.15(B)(2)(a)
 
 def T_correccion(tambiente, toperacion, matriz):
     factores = {
