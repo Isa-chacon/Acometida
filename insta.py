@@ -304,10 +304,24 @@ def calculos_basicos (potencia,tipo_sistema,voltaje, ambiente,fp,tipofp):
 #y les modifica la capacidad de corriente de acuerdo con la corrección por temperatura 
 
 def T_correccion(tambiente, toperacion, matriz):
-    factores = {(21, 25): {60: 1.08, 75: 1.05, 90: 1.04},
-                (26, 30): {60: 1.00, 75: 1.00, 90: 1.00},
-                (31, 35): {60: 0.91, 75: 0.94, 90: 0.96},
-                (36, 40): {60: 0.82, 75: 0.88, 90: 0.91}}
+    factores = {
+        (-20,10): {60: 1.29, 75: 1.20, 90: 1.15},
+        (11, 15): {60: 1.22, 75: 1.15, 90: 1.12},
+        (16, 20): {60: 1.15, 75: 1.11, 90: 1.08},
+        (21, 25): {60: 1.08, 75: 1.05, 90: 1.04},
+        (26, 30): {60: 1.00, 75: 1.00, 90: 1.00},
+        (31, 35): {60: 0.91, 75: 0.94, 90: 0.96},
+        (36, 40): {60: 0.82, 75: 0.88, 90: 0.91},
+        (41, 45): {60: 0.71, 75: 0.82, 90: 0.87},
+        (46, 50): {60: 0.58, 75: 0.75, 90: 0.82},
+        (51, 55): {60: 0.41, 75: 0.67, 90: 0.76},
+        (56, 60): {60: None, 75: 0.58, 90: 0.71},
+        (61, 65): {60: None, 75: 0.47, 90: 0.65},
+        (66, 70): {60: None, 75: 0.33, 90: 0.58},
+        (71, 75): {60: None, 75: None, 90: 0.50},
+        (76, 80): {60: None, 75: None, 90: 0.41},
+        (81, 85): {60: None, 75: None, 90: 0.29}
+    }
 
     fcorreccion = 1.00
     for rango, valores in factores.items():
@@ -430,7 +444,7 @@ with col2:
         tipofp = st.selectbox("Seleccione el tipo de factor de potencia:", ["Inductivo", "Capacitivo"]) 
         
 with col3:
-    T_ambiente = st.number_input('Digite la temperatura ambiente (°C):', min_value=21, max_value=40)
+    T_ambiente = st.number_input('Digite la temperatura ambiente (°C):', min_value=-20, max_value=85)
     ambiente = st.selectbox("Seleccione el tipo de ambiente: ", ["Seco", "Seco/Humedo"])
     ubicacion = st.selectbox("Seleccione la ubicación de la acometida: ", ["Superficial", "Empotrada",'Subterránea'])
 
