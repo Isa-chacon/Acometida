@@ -405,7 +405,7 @@ Consideraciones para el cálculo de su acometida eléctrica:
 
 st.link_button("Ver tutorial", "https://uninorte-my.sharepoint.com/:f:/g/personal/imchacon_uninorte_edu_co/EteS2J884clCjUExmLOj07ABexGOt-7pBWxJq2kaeuPFzQ?e=Xp4z6I")
 
-st.markdown("<h2 class='subheader'>Datos de entrada: </h2>", unsafe_allow_html=True)
+st.markdown("<h4 style='color: blue;'>Datos de entrada</h4>", unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns(3)
 
