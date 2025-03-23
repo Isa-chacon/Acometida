@@ -444,7 +444,7 @@ with col2:
         tipofp = st.selectbox("Seleccione el tipo de factor de potencia:", ["Inductivo", "Capacitivo"]) 
         
 with col3:
-    T_ambiente = st.number_input('Digite la temperatura ambiente (°C):', min_value=-20, max_value=85)
+    T_ambiente = st.number_input('Digite la temperatura ambiente (°C):', min_value=-20, max_value=85,value=30)
     ambiente = st.selectbox("Seleccione el tipo de ambiente: ", ["Seco", "Seco/Humedo"])
     ubicacion = st.selectbox("Seleccione la ubicación de la acometida: ", ["Superficial", "Empotrada",'Subterránea'])
 
