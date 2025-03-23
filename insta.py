@@ -392,10 +392,8 @@ def insulating (T_cable):
 
 ############################### INTERFAZ ###########################
 
-st.markdown("<h1 class='title'>Cálculo de Acometida</h1>", unsafe_allow_html=True)
-
 st.markdown(
-    "<h1 style='color:  #008B8B; text-align: center; font-size: 40px;'>Cálculo de Acometida</h4>",
+    "<h1 style='color:  #008B8B; text-align: center; font-size: 50px;'>Cálculo de Acometida</h4>",
     unsafe_allow_html=True
 )
 
@@ -411,7 +409,7 @@ Consideraciones para el cálculo de su acometida eléctrica:
 st.link_button("Ver tutorial", "https://uninorte-my.sharepoint.com/:f:/g/personal/imchacon_uninorte_edu_co/EteS2J884clCjUExmLOj07ABexGOt-7pBWxJq2kaeuPFzQ?e=Xp4z6I")
 
 st.markdown(
-    "<h4 style='color: cadetblue; text-align: center; font-size: 20px;'>Datos de entrada</h4>",
+    "<h4 style='color: cadetblue; text-align: center; font-size: 30px;'>Datos de entrada</h4>",
     unsafe_allow_html=True
 )
 
