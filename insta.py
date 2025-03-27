@@ -416,7 +416,6 @@ st.markdown("""
 Consideraciones para el cálculo de su acometida eléctrica:
 - Con esta aplicación obtendrá 4 opciones para su acometida con cable de cobre y aluminio, y con 1 y 2 conductores por fase.
 - Los termoplásticos considerados son TW, THW y THHW.
-- Este cálculo admite temperaturas ambiente entre 21 y 40°C.
 - Si el sistema no encuentra un cálibre adecuado para su acometida en el valor del cálibre se evidenciará "NA".
 - El calibre indicado se recomienda para las fases, el neutro y la tierra.
 """)
